@@ -12,12 +12,15 @@
     ],
     "scripts": {
         "test": "mocha tests --recursive",
-        "test:watch": "mocha tests --recursive --watch"
+        "test:watch": "mocha tests --recursive --watch",
+        "lint": "eslint lib/**/*.js tests/**/*.js",
+        "lint:fix": "eslint lib/**/*.js tests/**/*.js --fix"
     },
-    "dependencies": { },
+    "dependencies": {},
     "devDependencies": {
-        "eslint": "~3.9.1",
-        "mocha": "^3.1.2"
+        "eslint": "^7.0.0",
+        "eslint-config-simon": "^1.3.0",
+        "mocha": "^7.1.2"
     },
     "engines": {
         "node": ">=12.16.3"
