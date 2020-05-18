@@ -1,0 +1,25 @@
+{
+    "name": "eslint-plugin-align-import",
+    "version": "0.0.0",
+    "description": "Babel plugin to align your import statements.",
+    "license": "MIT",
+    "author": "Simon Reinisch <trash@reinisch.io>",
+    "main": "./lib/index.js",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin"
+    ],
+    "scripts": {
+        "test": "mocha tests --recursive",
+        "test:watch": "mocha tests --recursive --watch"
+    },
+    "dependencies": { },
+    "devDependencies": {
+        "eslint": "~3.9.1",
+        "mocha": "^3.1.2"
+    },
+    "engines": {
+        "node": ">=12.16.3"
+    }
+}
