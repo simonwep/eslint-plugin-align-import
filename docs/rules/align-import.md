@@ -1,8 +1,7 @@
-# ESLint plugin to align your import statements. (eslint-plugin-align-import)
+# Align import statements (align-import)
 
-This plugin is the response for this [SO Question](https://stackoverflow.com/questions/59935918/eslint-indent-import-export-statements).
+This rules is the response for this [SO Question](https://stackoverflow.com/questions/59935918/eslint-indent-import-export-statements).
 It'll align all import-statements in the same "block".
-
 
 ## Rule Details
 
