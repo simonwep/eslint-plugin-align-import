@@ -76,6 +76,16 @@ Add `babel-align-import` to the plugins section of your `.eslintrc` configuratio
 }
 ```
 
+You might have to update the [`no-multi-spaces`](https://eslint.org/docs/rules/no-multi-spaces) rule to allow multiple spaces in front of `import`:
+
+```json
+{
+    "rules": {
+        "no-multi-spaces": ["error", {"exceptions": {"ImportDeclaration": true}}]
+    }
+}
+```
+
 There are two rules available:
 
 | rule | description |
