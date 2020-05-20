@@ -66,13 +66,23 @@ $ npm install eslint-plugin-align-import --save-dev
 
 ### Usage
 
-Add `babel-align-import` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `eslint-plugin-align-import` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "babel-align-import"
+        "align-import"
     ]
+}
+```
+
+You might have to update the [`no-multi-spaces`](https://eslint.org/docs/rules/no-multi-spaces) rule to allow multiple spaces in front of `from`:
+
+```json
+{
+    "rules": {
+        "no-multi-spaces": ["error", {"exceptions": {"ImportDeclaration": true}}]
+    }
 }
 ```
 
